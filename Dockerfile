@@ -1,7 +1,6 @@
 FROM php:7.2
 
-RUN apt-get update && apt-get install -y unzip git msmtp-mta openssh-client --no-install-recommends && rm -r /var/lib/apt/lists/*
-RUN apt-get install -my wget gnupg
+RUN apt-get update && apt-get install -y wget gnupg unzip git msmtp-mta openssh-client --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/ \
