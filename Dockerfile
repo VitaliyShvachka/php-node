@@ -12,7 +12,7 @@ RUN curl -sSLo phpunit.phar https://phar.phpunit.de/phpunit-old.phar \
     && ln -s /usr/local/bin/phpunit.phar /usr/local/bin/phpunit
     
 # Install Node.js
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && apt-get install -y nodejs build-essential
 
 # Install Yarn
