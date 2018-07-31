@@ -26,5 +26,5 @@ RUN rm -r /var/lib/apt/lists/*
 
 COPY msmtprc /etc/
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+#ENTRYPOINT ["/entrypoint.sh"]
 CMD ["php", "-a"]
