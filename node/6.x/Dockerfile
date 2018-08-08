@@ -21,7 +21,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && apt-get update && apt-get install yarn
     
 RUN npm install -g pngquant-bin --allow-root --unsafe-perm=true
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@1.1.1
 RUN npm install -g cross-env
 
 RUN apt-get install -y rsync
